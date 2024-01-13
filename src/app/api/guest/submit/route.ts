@@ -24,8 +24,8 @@ export async function POST(request: Request) {
       }),
     })
     .spreadsheets.values.update({
-      spreadsheetId: "1ANtyzxFYwz_yuh6D7eRGwMII59YWxb1CM3H5wBY_pGo",
-      range: "Free!A1",
+      spreadsheetId: "1MvgPZuu4kFBQd_Y9eHZGdxGhwSA6dJAnxK__StgHEeE",
+      range: "WebsiteDummy!A1",
       valueInputOption: "RAW",
       requestBody: {
         values: [[name]],

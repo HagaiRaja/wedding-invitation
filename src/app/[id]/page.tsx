@@ -65,7 +65,7 @@ export default function Home() {
 
   const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
   const start = new Date();
-  const end = new Date("2023-12-16");
+  const end = new Date("2024-06-22");
 
   const days = Math.round(Math.abs((start.getTime() - end.getTime()) / oneDay));
 
@@ -109,9 +109,9 @@ export default function Home() {
           >
             <p className={cn(dancingScript.className)}>The Wedding Party of</p>
             <p className={cn(dancingScript.className, "text-4xl")}>
-              Gery & Mahita
+              Hagai & Putri
             </p>
-            <p className="text-sm">16.12.2023</p>
+            <p className="text-sm">22.06.2024</p>
           </div>
         </div>
         <AnimateOnScroll>
@@ -146,13 +146,13 @@ export default function Home() {
               alt="Picture of the author"
             />
             <div className="flex flex-col space-y-2">
-              <p className="text-2xl text-gray-700">Putu Gery Wahyu Nugraha</p>
+              <p className="text-2xl text-gray-700">Hagai Raja Sinulingga</p>
               <div className="border-t border-black font-light text-gray-700">
-                son of
+                the son and 4th child of
               </div>
               <p className="text-black">
-                Putu Suadnyana &<br />
-                Putu Yeni Widiadnyani
+                Gospin Sinulingga &<br />
+                Hotria Sinaga
               </p>
             </div>
           </div>
@@ -161,14 +161,14 @@ export default function Home() {
           <div className="flex flex-row space-x-4 items-center">
             <div className="flex flex-col space-y-2">
               <p className="text-2xl text-end text-black">
-                Ni Luh Mahita Eka Riadi
+                Eunike Putri Permata Murthy
               </p>
               <div className="border-t border-black font-light text-gray-700 text-end">
-                daughter of
+                the daughter and 2nd child of
               </div>
               <p className="text-end text-black">
-                Nyoman Triyasa &<br />
-                Ni Wayan Resiadi
+                I Made Timotius Moerthy &<br />
+                Iis Winarni
               </p>
             </div>
             <Image
@@ -211,23 +211,23 @@ export default function Home() {
               Join us for the celebration at
               <br />
               <span className="font-bold text-gray-700">
-                Warung di Kebun, Denpasar City
+                Sekar Jambu, Denpasar City
               </span>
               <br />
               — on — <br />{" "}
               <span className="font-bold text-gray-700">
-                16th of December 2023
+                22nd of June 2024
               </span>{" "}
               <br />{" "}
               <span className="font-bold text-gray-700">
-                17.00-20.00 Bali Time
+                17.30 Bali Time
               </span>
               <br />
               <br />
             </p>
             <div className="relative h-[200px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.2792415061267!2d115.23871231178799!3d-8.664971488150677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240613bbb02bb%3A0x26437fa8b7acd924!2sWarung%20Di%20Kebun!5e0!3m2!1sen!2sid!4v1700584477176!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15776.891470524244!2d115.24277480322088!3d-8.670343365150401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24068f801c5d7%3A0x37fddfd04fda407!2sSekar%20Jambu!5e0!3m2!1sid!2skr!4v1705150849140!5m2!1sid!2skr"
                 width="450"
                 height="200"
                 style={{
@@ -269,7 +269,7 @@ export default function Home() {
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
               For the convenience of our event, please confirm your attendance
-              by December 7th
+              by June 10th
             </p>
             <Submission />
           </div>
@@ -528,7 +528,7 @@ export default function Home() {
         </div>
 
         <p className={cn(dancingScript.className, "py-5 text-black")}>
-          Made with love, by Gery & Mahita
+          Inspired by lovely couple Gery & Mahita
         </p>
       </main>
     </>

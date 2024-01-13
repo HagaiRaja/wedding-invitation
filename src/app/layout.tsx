@@ -4,8 +4,8 @@ import { specialElite } from "./font";
 import { cn } from "./utils";
 
 export const metadata: Metadata = {
-  title: "Gery & Mahita Wedding Invitation",
-  description: "Gery & Mahita Wedding Invitation",
+  title: "Hagai & Putri Wedding Invitation",
+  description: "An Invitation for our beloved guests to the beginning of Hagai & Putri lifetime journey",
 };
 
 export default function RootLayout({

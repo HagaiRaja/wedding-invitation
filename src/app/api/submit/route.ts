@@ -27,8 +27,8 @@ export async function POST(request: Request) {
       }),
     })
     .spreadsheets.values.update({
-      spreadsheetId: "1ANtyzxFYwz_yuh6D7eRGwMII59YWxb1CM3H5wBY_pGo",
-      range: "Invitation!I" + row,
+      spreadsheetId: "1MvgPZuu4kFBQd_Y9eHZGdxGhwSA6dJAnxK__StgHEeE",
+      range: "Undangan!I" + row,
       valueInputOption: "RAW",
       requestBody: {
         values: [[value]],
