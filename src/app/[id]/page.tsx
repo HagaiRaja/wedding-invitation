@@ -6,7 +6,7 @@ import { dancingScript, sansSerif } from "../font";
 import { cn } from "../utils";
 import Typewriter from "typewriter-effect";
 import Image1 from "../../../public/0_1.jpg";
-import Image2 from "../../../public/2.gif";
+import Image2 from "../../../public/2.jpg";
 import ImageCol1 from "../../../public/col_1.jpg";
 import ImageCol1_1 from "../../../public/col_1_1.jpg";
 import ImageCol1_2 from "../../../public/col_1_2.jpg";
@@ -30,9 +30,9 @@ import ImageCol5_3 from "../../../public/col_5_3.jpg";
 import ImageCol6 from "../../../public/col_6.jpg";
 import ImageCol6_1 from "../../../public/col_6_1.jpg";
 import ImageCol6_2 from "../../../public/col_6_2.jpg";
-import ImageCol6_3 from "../../../public/col_6_4.jpg";
-import Gery from "../../../public/gery.jpg";
-import Mahita from "../../../public/mahita.jpg";
+import ImageCol6_3 from "../../../public/col_6_3.jpg";
+import Hagai from "../../../public/hagai.jpg";
+import Putri from "../../../public/putri.jpg";
 import Separator from "../../../public/separator_1.png";
 import { Toaster } from "react-hot-toast";
 import Submission from "./submission";
@@ -141,14 +141,14 @@ export default function Home() {
         <AnimateOnScroll>
           <div className="flex flex-row space-x-4 items-center">
             <Image
-              src={Gery}
+              src={Hagai}
               width={videoWidth / 2}
               alt="Picture of the author"
             />
             <div className="flex flex-col space-y-2">
               <p className="text-2xl text-gray-700">Hagai Raja Sinulingga</p>
               <div className="border-t border-black font-light text-gray-700">
-                the son and 4th child of
+                the 4th child of
               </div>
               <p className="text-black">
                 Gospin Sinulingga &<br />
@@ -164,7 +164,7 @@ export default function Home() {
                 Eunike Putri Permata Murthy
               </p>
               <div className="border-t border-black font-light text-gray-700 text-end">
-                the daughter and 2nd child of
+                the 2nd child of
               </div>
               <p className="text-end text-black">
                 I Made Timotius Moerthy &<br />
@@ -172,7 +172,7 @@ export default function Home() {
               </p>
             </div>
             <Image
-              src={Mahita}
+              src={Putri}
               width={videoWidth / 2}
               alt="Picture of the author"
             />

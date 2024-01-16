@@ -6,6 +6,27 @@ import { cn } from "./utils";
 export const metadata: Metadata = {
   title: "Hagai & Putri Wedding Invitation",
   description: "An Invitation for our beloved guests to the beginning of Hagai & Putri lifetime journey",
+  openGraph: {
+    title: 'Hagai & Putri Wedding Invitation',
+    description: 'An Invitation for our beloved guests to the beginning of Hagai & Putri lifetime journey',
+    url: 'https://eunikeputri.hagairaja.tech',
+    siteName: 'eunikeputri.hagairaja.tech',
+    images: [
+      {
+        url: 'https://eunikeputri.hagairaja.tech/images/og.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: 'Hagai & Putri',
+      },
+      {
+        url: 'https://eunikeputri.hagairaja.tech/images/og-alt.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Hagai & Putri',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -23,6 +44,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <link rel="shortcut icon" href="/favicon.ico" />
     </html>
   );
 }
