@@ -17,6 +17,7 @@
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-player": "^2.13.0",
+    "sharp": "^0.33.2",
     "tailwind-merge": "^2.0.0",
     "typewriter-effect": "^2.21.0",
     "zod": "^3.22.4"
