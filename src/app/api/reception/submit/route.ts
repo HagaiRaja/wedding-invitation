@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 import { z } from "zod";
-import { mappings } from "./data";
+import { mappings } from "../../data";
 
 export async function POST(request: Request) {
   const { id, value } = z
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     })
     .spreadsheets.values.update({
       spreadsheetId: "1MvgPZuu4kFBQd_Y9eHZGdxGhwSA6dJAnxK__StgHEeE",
-      range: "Undangan!I" + row,
+      range: "Undangan!J" + row,
       valueInputOption: "RAW",
       requestBody: {
         values: [[value]],

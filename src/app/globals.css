@@ -18,3 +18,15 @@
 
 body {
 }
+
+/* .w-screen {
+  width: 100%;
+} */
+
+.google-wish {
+  color: blue;
+}
+
+.bank-div:hover {
+  cursor: pointer;
+}

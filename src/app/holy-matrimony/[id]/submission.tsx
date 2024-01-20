@@ -3,7 +3,7 @@
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { cn } from "../utils";
+import { cn } from "../../utils";
 import { useParams } from "next/navigation";
 
 export default function Submission() {
@@ -13,7 +13,7 @@ export default function Submission() {
   const [status, setStatus] = useState<string | undefined>(undefined);
   const accept = async () => {
     setLoading(true);
-    const response = await fetch("/api/submit", {
+    const response = await fetch("/api/holy-matrimony/submit", {
       body: JSON.stringify({
         value: "accept",
         id,
@@ -32,7 +32,7 @@ export default function Submission() {
 
   const reject = async () => {
     setLoadingReject(true);
-    const response = await fetch("/api/submit", {
+    const response = await fetch("/api/holy-matrimony/submit", {
       body: JSON.stringify({
         value: "reject",
         id,
@@ -74,7 +74,7 @@ export default function Submission() {
           >
             <div className="h-4 w-4 bg-white"></div>
             <p className=" text-black hover:underline text-center">
-              No, I cannot come
+              {"Sorry, I can't come"}
             </p>
             <Loader2
               className={cn(

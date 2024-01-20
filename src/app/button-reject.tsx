@@ -8,7 +8,7 @@ export default function AcceptButton() {
   const [loading, setLoading] = useState(false);
   const accept = async () => {
     setLoading(true);
-    const response = await fetch("/api/submit", {
+    const response = await fetch("/api/reception/submit", {
       body: JSON.stringify({
         value: "reject",
       }),
@@ -25,7 +25,7 @@ export default function AcceptButton() {
   return (
     <div className="flex flex-row cursor-pointer" onClick={() => accept()}>
       <p className="hover:underline border border-black px-4 py-2 flex-grow text-center">
-        No, I cannot come
+        {"Sorry, I can't come"}
       </p>
       {loading && <Loader2 className="h-4 w-4 animate-spin" />}
     </div>

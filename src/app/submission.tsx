@@ -66,7 +66,7 @@ export default function Submission() {
             >
               <div className="h-4 w-4 bg-white"></div>
               <p className=" text-black hover:underline text-center">
-                No, I cannot come
+                {"Sorry, I can't come"}
               </p>
               <Loader2
                 className={cn(

@@ -2,23 +2,23 @@
 
 import Image from "next/image";
 import ReactPlayer from "react-player";
-import { dancingScript, sansSerif } from "./font";
-import { cn } from "./utils";
+import { dancingScript, sansSerif } from "../../font";
+import { cn } from "../../utils";
 import Typewriter from "typewriter-effect";
-import Image1 from "../../public/0_1.jpg";
-import Image2 from "../../public/2.jpg";
-import Hagai from "../../public/hagai.jpg";
-import Putri from "../../public/putri.jpg";
-import Separator from "../../public/separator_1.png";
+import Image1 from "../../../../public/0_1.jpg";
+import Image2 from "../../../../public/2.jpg";
+import Hagai from "../../../../public/hagai.jpg";
+import Putri from "../../../../public/putri.jpg";
+import Separator from "../../../../public/separator_1.png";
 import { Toaster } from "react-hot-toast";
 import Submission from "./submission";
-import Memories from "./memories";
-import Wishes from "./wishes";
+import Memories from "@/app/memories";
+import Wishes from "@/app/wishes";
+import Story from "@/app/story";
 import { notFound, useParams } from "next/navigation";
 import AnimateOnScroll from "./animate";
 import { useEffect, useState } from "react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Story from "./story";
 
 export default function Home() {
   const { id } = useParams();
@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/guest/" + id)
+    fetch("/api/holy-matrimony/" + id)
       .then((response) => response.json())
       .then((data) => setName(data.name));
   }, [id]);
@@ -47,6 +47,9 @@ export default function Home() {
   const end = new Date("2024-06-22");
 
   const days = Math.round(Math.abs((start.getTime() - end.getTime()) / oneDay));
+
+  console.info(name);
+  if (name === null) return notFound();
 
   return (
     <>
@@ -83,7 +86,7 @@ export default function Home() {
             }}
             className="flex flex-col items-center justify-center absolute top-0 text-white w-full z-10"
           >
-            <p className={cn(dancingScript.className)}>The Wedding Party of</p>
+            <p className={cn(dancingScript.className)}>The Holy Matrimony of</p>
             <p className={cn(dancingScript.className, "text-4xl")}>
               Hagai & Putri
             </p>
@@ -101,7 +104,7 @@ export default function Home() {
               <Typewriter
                 options={{
                   deleteSpeed: 1000000,
-                  strings: [`Hi...`],
+                  strings: [`Dear ${name},`],
                   autoStart: true,
                   loop: true,
                 }}
@@ -190,10 +193,10 @@ export default function Home() {
               className="absolute h-full w-full"
             ></div>
             <p className="text-center text-black px-4">
-              Join us for the celebration at
+              Join us for on the holy matrimony at
               <br />
               <span className="font-bold text-gray-700">
-                Sekar Jambu, Denpasar City
+                The Holy Spirit Cathedral Denpasar
               </span>
               <br />
               — on — <br />{" "}
@@ -202,14 +205,16 @@ export default function Home() {
               </span>{" "}
               <br />{" "}
               <span className="font-bold text-gray-700">
-                17.30 Bali Time
+                13.00 Bali Time
               </span>
-              <br />
+              <br />{" "}
+              please arrive earlier, the ceremony will start ontime
+              <br />{" "}
               <br />
             </p>
             <div className="relative h-[200px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15776.891470524244!2d115.24277480322088!3d-8.670343365150401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24068f801c5d7%3A0x37fddfd04fda407!2sSekar%20Jambu!5e0!3m2!1sid!2skr!4v1705150849140!5m2!1sid!2skr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1843597729003!2d115.22657377456855!3d-8.674010888302014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24051d08652b9%3A0xbb7ed0caeda9269a!2sGereja%20Katolik%20Roh%20Kudus%20Katedral%20Denpasar!5e0!3m2!1sid!2skr!4v1705760961848!5m2!1sid!2skr"
                 width="450"
                 height="200"
                 style={{
@@ -251,7 +256,7 @@ export default function Home() {
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
               For the convenience of our event, please confirm your attendance
-              by February 21st
+              by February 21
             </p>
             <Submission />
           </div>

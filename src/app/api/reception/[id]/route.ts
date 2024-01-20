@@ -1,10 +1,10 @@
-import { mappings } from "../submit/data";
+import { mappings } from "../../data";
 
 export async function GET(
   _request: Request,
   { params: { id } }: { params: { id: string } }
 ) {
   return Response.json({
-    name: mappings.find((m) => m.id === id)?.name || null,
+    name: mappings.find((m) => m.id === id && m.isReception == "TRUE")?.name || null,
   });
 }
