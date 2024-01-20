@@ -42,6 +42,13 @@ export default function Memories() {
 
   return (
     <>
+      {image && (
+        <ImagePreview
+          src={image}
+          width={videoWidth}
+          onClose={() => setImage(null)}
+        />
+      )}
       <AnimateOnScroll>
         <div className="p-4 pb-5 pt-0">
           <p
@@ -288,5 +295,31 @@ export default function Memories() {
         </AnimateOnScroll>
       </div>
     </>
+  );
+}
+
+function ImagePreview(props: {
+  src: StaticImport;
+  width: number;
+  onClose: () => void;
+}) {
+  return (
+    <div
+      className="fixed top-0 h-screen w-screen flex items-center justify-center z-50"
+      onClick={props.onClose}
+    >
+      <div className="w-[450px] z-100 h-full">
+        <div className="w-full h-full p-4 z-100 items-center justify-center flex bg-black bg-opacity-50">
+          <div className="drop-shadow-md">
+            <Image
+              src={props.src}
+              width={props.width - 40}
+              alt="separator"
+              placeholder="blur"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
