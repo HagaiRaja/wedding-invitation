@@ -33,7 +33,7 @@ export default function Story() {
               <br /><br />
               {"Over a "}<span className="text-white bg-black">serious 12 weeks</span>{" getting-to-know-each-other phase, Hagai visited Bali and we decided to "}<span className="font-bold">officially start dating</span>{" on November 18th 2020. However, our journey took a turn as Hagai chose to study in Seoul, leading us into Long Distance Relationship (LDR). Putri escorted Hagai in tears, to CGK airport on February 14th 2021."}
               <br /><br />
-              {"On August 18th 2023, Hagai brought his parents to Putri's "}<span className="text-white bg-black">Bali</span>{" home, demonstrating his "}<span className="font-bold">commitment to taking the next step</span>{". Putri reciprocated by meeting Hagai's family in "}<span className="text-white bg-black">Medan</span>{" on New Year's Eve 2024"}
+              {"On August 18th 2023, Hagai brought his parents to Putri's "}<span className="text-white bg-black">Bali</span>{" home, demonstrating his "}<span className="font-bold">commitment to taking the next step</span>{". Putri reciprocated by meeting Hagai's family in "}<span className="text-white bg-black">Medan</span>{" on New Year's Eve 2024"}.
               <br /><br />
               {"Now, this is the most significant and special time for us. We have chosen June 22nd 2024 as the day to "}<span className="font-bold">exchange vows</span>{" before God and our loved ones. "}<br/><span className="font-bold underline">May God bless this new chapter in our journey.</span>
               <br />
