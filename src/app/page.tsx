@@ -197,9 +197,22 @@ export default function Home() {
               <span className="font-bold text-gray-700">
                 17.30 Bali Time
               </span>
-              <br />
+              <br />{" "}
+              please arrive ontime, the grand entrance is on sunset
+              <br />{" "}
+              <span className="font-underline">
+                Dress code: Pastel (exclude pink) 
+              </span>
               <br />
             </p>
+            <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N3E2MnJyaTFiamlmcmRyZ2txNzEwajJjdTIgaGFnYWlyYWphQG0&tmsrc=hagairaja%40gmail.com"
+            className={cn(
+              sansSerif.className,
+              "google-wish text-2l z-50"
+            )} target="_blank" rel="noopener noreferrer">
+              Add to Calendar
+            </a>
+            <br />
             <div className="relative h-[200px] w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15776.891470524244!2d115.24277480322088!3d-8.670343365150401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24068f801c5d7%3A0x37fddfd04fda407!2sSekar%20Jambu!5e0!3m2!1sid!2skr!4v1705150849140!5m2!1sid!2skr"

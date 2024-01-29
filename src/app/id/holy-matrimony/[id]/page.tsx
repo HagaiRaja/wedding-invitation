@@ -202,8 +202,15 @@ export default function Home() {
               <br />{" "}
               Harap tiba lebih awal, ibadah akan dimulai tepat waktu
               <br />{" "}
-              <br />
             </p>
+            <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGd1N2tldXY1MmdjZ3NjNTA5OGpzZzdlNWMgaGFnYWlyYWphQG0&tmsrc=hagairaja%40gmail.com"
+            className={cn(
+              sansSerif.className,
+              "google-wish text-2l z-50"
+            )} target="_blank" rel="noopener noreferrer">
+              Tambahkan ke Kalender
+            </a>
+            <br />
             <div className="relative h-[200px] w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1843597729003!2d115.22657377456855!3d-8.674010888302014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24051d08652b9%3A0xbb7ed0caeda9269a!2sGereja%20Katolik%20Roh%20Kudus%20Katedral%20Denpasar!5e0!3m2!1sid!2skr!4v1705760961848!5m2!1sid!2skr"
