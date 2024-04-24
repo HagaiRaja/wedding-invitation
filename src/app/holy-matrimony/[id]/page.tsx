@@ -186,7 +186,7 @@ export default function Home() {
               className="absolute h-full w-full"
             ></div>
             <p className="text-center text-black px-4">
-              Join us for on the holy matrimony at
+              Join us for the holy matrimony at
               <br />
               <span className="font-bold text-gray-700">
                 The Holy Spirit Cathedral Denpasar
@@ -256,7 +256,7 @@ export default function Home() {
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
               For the convenience of our event, please confirm your attendance
-              by February 21
+              by May 4th
             </p>
             <Submission />
           </div>

@@ -254,7 +254,7 @@ export default function Home() {
         <AnimateOnScroll>
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
-              Demi kenyamanan acara, harap konfirmasi kehadiran Anda paling lambat tanggal 21 Februari
+              Demi kenyamanan acara, harap konfirmasi kehadiran Anda paling lambat tanggal 4 Mei
             </p>
             <Submission />
           </div>
