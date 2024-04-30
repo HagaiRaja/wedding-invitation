@@ -40,7 +40,7 @@ export default function Wishes() {
                   sansSerif.className,
                   "google-wish text-2xl"
                 )} target="_blank" rel="noopener noreferrer">
-              Google Wish
+              Klik disini untuk menulis Pesan
               </a>
               <br /><br />{" "}
               Jika Anda ingin memberikan hadiah untuk membantu kami dalam petualangan kedepan, hadiah tunai akan sangat kami apresiasi 😊 Jika Anda lebih suka kado, jangan ragu untuk memberikan kejutan kepada kami dengan cara spesial Anda!

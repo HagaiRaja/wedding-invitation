@@ -40,7 +40,7 @@ export default function Wishes() {
                   sansSerif.className,
                   "google-wish text-2xl"
                 )} target="_blank" rel="noopener noreferrer">
-              Google Wish
+              Click here to send wishes
               </a>
               <br /><br />{" "}
               If you were thinking of giving a gift to help us on our way, a gift of cash towards our house would really make our day 😊
