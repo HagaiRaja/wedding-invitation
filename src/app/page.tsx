@@ -257,7 +257,7 @@ export default function Home() {
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
               For the convenience of our event, please confirm your attendance
-              by May 11th
+              by May 17th
             </p>
             <Submission />
           </div>
