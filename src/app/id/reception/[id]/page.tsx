@@ -19,6 +19,7 @@ import { notFound, useParams } from "next/navigation";
 import AnimateOnScroll from "./animate";
 import { useEffect, useState } from "react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { rsvp_deadline_id } from "@/app/deadline";
 
 export default function Home() {
   const { id } = useParams();
@@ -258,7 +259,7 @@ export default function Home() {
         <AnimateOnScroll>
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
-            Demi kenyamanan acara, harap konfirmasi kehadiran Anda paling lambat tanggal 17 Mei
+            Demi kenyamanan acara, harap konfirmasi kehadiran Anda paling lambat tanggal {rsvp_deadline_id}
             </p>
             <Submission />
           </div>

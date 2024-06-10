@@ -19,6 +19,7 @@ import { notFound, useParams } from "next/navigation";
 import AnimateOnScroll from "./animate";
 import { useEffect, useState } from "react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { rsvp_deadline_en } from "@/app/deadline";
 
 export default function Home() {
   const { id } = useParams();
@@ -256,7 +257,7 @@ export default function Home() {
           <div className="px-4 pt-5 pb-0 space-y-4">
             <p className="text-center leading-5 text-black">
               For the convenience of our event, please confirm your attendance
-              by May 17th
+              by {rsvp_deadline_en}
             </p>
             <Submission />
           </div>
